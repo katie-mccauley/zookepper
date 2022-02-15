@@ -14,6 +14,9 @@ function _draw() {
     <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.bigBoy()">Big Boy</button> 
     <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.cows()">Petting Zoo</button> 
     <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.bears()">Bears</button> 
+    <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.cowEat()">Cow Eat</button> 
+    <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.tails()">Tails</button>  
+
     <div class="values d-flex flex-wrap my-3">
       ${cardsTemplate}
     </div>
@@ -53,6 +56,14 @@ export class ValuesController {
 
   bears() {
     valuesService.animalsSpeak()
+  }
+
+  cowEat() {
+    valuesService.cowsEat()
+  }
+
+  tails() {
+    valuesService.tails()
   }
 
 }

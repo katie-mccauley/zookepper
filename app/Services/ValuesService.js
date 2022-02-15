@@ -47,6 +47,7 @@ let needlefish = new Needlefish("neddles", "grey", 50, 20, 5)
 let octopus = new Octopus("fishy", "orange", "male", 100, 0, 25)
 
 let pettingZoo = [kelly, billy]
+let tails = [gold, tailsy]
 
 let carnivores = [new Goat("")]
 
@@ -83,6 +84,14 @@ class ValuesService {
 
   animalsSpeak() {
     animals.bears.forEach(b => b.speak("We all eat grass"))
+  }
+
+  cowsEat() {
+    pettingZoo.forEach(e => e.eat("Pizza"))
+  }
+
+  tails() {
+    tails.forEach(t => t.eat("Pies"))
   }
 
 }
